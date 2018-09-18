@@ -1,0 +1,13 @@
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+$vlab-app-primary: mat-palette($mat-blue);
+$vlab-app-accent:  mat-palette($mat-deep-purple, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$vlab-app-warn:    mat-palette($mat-red);
+
+
+$vlab-app-theme: mat-light-theme( $vlab-app-primary, $vlab-app-accent, $vlab-app-warn);
+
+@include angular-material-theme($vlab-app-theme);

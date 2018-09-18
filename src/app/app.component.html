@@ -1,1 +1,30 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+
+  <mat-sidenav #snav opened>
+    <mat-nav-list>
+
+      <a mat-list-item  routerLink="/home">Home</a>
+      <a mat-list-item  routerLink="/members">Members</a>
+      <a mat-list-item  routerLink="/projects">Projects</a>
+      <a mat-list-item  routerLink="/publications">Publications</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <app-header></app-header>
+    <app-toolbar-horizontal  fxLayout="row" fxHide.md fxHide.sm fxHide.xs></app-toolbar-horizontal>
+
+
+    <router-outlet></router-outlet>
+    
+
+    <!-- <router-outlet></router-outlet> -->
+    <!-- My Content -->
+
+    <div style="height: 500px"></div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
