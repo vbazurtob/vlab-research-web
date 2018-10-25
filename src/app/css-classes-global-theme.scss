@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin global-colors-theme($themeTmp) {
+  // Extract whichever individual palettes you need from the theme.
+  $global-primary: map-get($themeTmp, primary);
+  $global-accent: map-get($themeTmp, accent);
+
+  // Use mat-color to extract individual colors from a palette as necessary.
+  .text-primary-color {
+    color: mat-color($global-primary);
+    // background-color: mat-color($primary);
+    // border-color: mat-color($accent, A400);
+  }
+
+  .text-accent-color {
+    color: mat-color($global-accent);
+    // background-color: mat-color($primary);
+    // border-color: mat-color($accent, A400);
+  }
+
+}
