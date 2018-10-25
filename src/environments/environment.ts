@@ -1,9 +1,15 @@
+import { globalCfg } from "../app/conf/global-cfg";
+import { ENDPOINTS } from "../app/conf/endpoints-cfg";
+
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  cfgConfiguration: globalCfg,
+  endpointsBaseUrl: "http://192.168.100.200:8080/assets/data/",
+  endpoints: ENDPOINTS
 };
 
 /*
