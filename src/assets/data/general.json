@@ -1,5 +1,58 @@
 {
-    "lab-name": "Test lab",
-    "lab-logo": "default-lab-logo.jpg",
-    "university-logo": "default-univ-logo.jpg"
+
+    "lab-info": {
+        "name": "Test lab",
+        "logo": "default-lab-logo.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis velit ultrices diam sagittis, in elementum felis interdum. Morbi ultrices nisl ut leo ultricies aliquet. Vestibulum in cursus tellus. Vivamus ornare luctus ipsum et lobortis. Fusce sit amet tortor commodo nisl scelerisque consectetur tempus eget ligula. Cras vel mauris eget mauris suscipit aliquet. Vestibulum ac sapien tempor, molestie urna et, finibus dui.",
+        "address1": "3455 That road",
+        "address2": "Office 101",
+        "state-province": "HX",
+        "city": "Sideralia",
+        "country": "Pulsar",
+        "university-logo": "default-univ-logo.jpg",
+        "university-name": "University of Distant Galaxy",
+        "contact-email" : "test@distant.galaxy.edu",
+
+
+        "professors": [
+            {
+                "name": "John Doe",
+                "position" : "Phd. Biology",
+
+            }
+        ],
+        "students": [
+            
+
+
+
+        ]
+    },
+
+
+    "sections": {
+        "about": {
+            "label": "About us",
+            "link": "/index.html"
+        },
+        "members": {
+            "label": "People",
+            "link": "/members.html"
+        },
+        "projects": {
+            "label": "Projects",
+            "link": "/projects.html"
+        },
+        "publications": {
+            "label": "Publications",
+            "link": "/publications.html"
+        },
+        "contact": {
+            "label": "Contact us",
+            "link": "mailto:contact@distant.galaxy.edu"
+        }
+
+    }
+
+    
 }

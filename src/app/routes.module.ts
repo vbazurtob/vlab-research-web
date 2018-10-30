@@ -1,5 +1,5 @@
 import { RouterModule, Routes, RoutesRecognized } from '@angular/router';
-import { MasterPageComponent } from './main-container/master-page/master-page.component';
+// import { MasterPageComponent } from './main-container/master-page/master-page.component';
 import { MembersPageComponent } from  './members/members-page/members-page.component';
 import { ProjectsPageComponent} from  './projects/projects-page/projects-page.component';
 import { PublicationsPageComponent } from  './publications/publications-page/publications-page.component';
@@ -11,10 +11,10 @@ export const appRoutes: Routes = [
         component: HomePageComponent
     },
 
-    {
-        path: "members",
-        component: MembersPageComponent
-    },
+    // {
+    //     path: "members",
+    //     component: MembersPageComponent
+    // },
 
     {
         path: "projects",

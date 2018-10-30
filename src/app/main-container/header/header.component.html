@@ -1,12 +1,23 @@
-<div class="header-background-img" fxLayout="column" fxLayoutAlign="space-around center">
-  <div>
-    <h2>
-      My Research Lab
-    </h2>
+<div class="header-background-img" fxLayout="row" fxLayoutAlign="start start">
+
+
+
+  <!--mat-button -->
+  <div  fxLayout="column" fxLayoutAlign="start start"   fxHide.gt-md    class="header-sidebar-btn-container">
+    <a  routerLink="."  (click)="snav.open()"   > <mat-icon class="text-white">menu</mat-icon> </a>
   </div>
-  <div >
-    <h3>
-      University of Distant Galaxy
-    </h3>
+
+  <div fxLayout="column" fxLayoutAlign="center center" class="header-title-container" fxFlex.lt-lg="100%">
+    <div>
+      <h2>
+        My Research Lab
+      </h2>
+    </div>
+    <div >
+      <h3>
+        University of Distant Galaxy
+      </h3>
+    </div>
   </div>
+  
 </div>

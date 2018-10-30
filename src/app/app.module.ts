@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
-import { MasterPageComponent } from './main-container/master-page/master-page.component';
+// import { MasterPageComponent } from './main-container/master-page/mas';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes.module';
 import { ToolbarHorizontalComponent } from './main-container/toolbar-horizontal/toolbar-horizontal.component';
@@ -16,17 +16,19 @@ import { HeaderComponent } from './main-container/header/header.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { ProjectsPageComponent } from './projects/projects-page/projects-page.component';
 import { PublicationsPageComponent } from './publications/publications-page/publications-page.component';
+import { FooterComponent } from './main-container/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MasterPageComponent,
+    // MasterPageComponent,
     ToolbarHorizontalComponent,
     MembersPageComponent,
     HeaderComponent,
     HomePageComponent,
     ProjectsPageComponent,
-    PublicationsPageComponent
+    PublicationsPageComponent,
+    FooterComponent
   ],
   imports: [
 

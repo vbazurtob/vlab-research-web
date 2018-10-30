@@ -1,6 +1,6 @@
 <mat-sidenav-container>
 
-  <mat-sidenav #snav opened>
+  <mat-sidenav #snavAppComponent>
     <mat-nav-list>
 
       <a mat-list-item  routerLink="/home">Home</a>
@@ -13,18 +13,16 @@
 
   <mat-sidenav-content>
 
-    <app-header></app-header>
+    <app-header  [snav]="snavAppComponent"></app-header>
     <app-toolbar-horizontal  fxLayout="row" fxHide.md fxHide.sm fxHide.xs></app-toolbar-horizontal>
 
 
     <router-outlet></router-outlet>
-    
-
-    <!-- <router-outlet></router-outlet> -->
-    <!-- My Content -->
+  
 
     <div style="height: 500px"></div>
 
+    <app-footer></app-footer>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
