@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeneralDataService } from './services/general-data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tmpapp';
+  title = 'VLab Research Web Demo';
+
+  constructor(private generalDataSvc: GeneralDataService) { 
+
+  }
+
+  ngOnInit() {
+    this.generalDataSvc.getRemoteGeneralData().subscribe( response => {
+      console.log(response);
+    } );
+  }
+
 }

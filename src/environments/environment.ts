@@ -8,7 +8,7 @@ import { ENDPOINTS } from "../app/conf/endpoints-cfg";
 export const environment = {
   production: false,
   cfgConfiguration: globalCfg,
-  endpointsBaseUrl: "http://192.168.100.200:8080/assets/data/",
+  endpointsBaseUrl: "http://192.168.100.200:4200/assets/data/",
   endpoints: ENDPOINTS
 };
 
