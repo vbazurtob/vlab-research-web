@@ -9,6 +9,9 @@ import { GeneralDataService } from './services/general-data.service';
 export class AppComponent {
   title = 'VLab Research Web Demo';
 
+  public generalDataCache;
+
+
   constructor(private generalDataSvc: GeneralDataService) { 
 
   }
@@ -16,6 +19,8 @@ export class AppComponent {
   ngOnInit() {
     this.generalDataSvc.getRemoteGeneralData().subscribe( response => {
       console.log(response);
+
+      this.generalDataCache = response;
     } );
   }
 

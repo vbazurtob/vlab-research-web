@@ -8,16 +8,39 @@
   </div>
 
   <div fxLayout="column" fxLayoutAlign="center center" class="header-title-container" fxFlex.lt-lg="100%">
-    <div>
-      <h2>
-        My Research Lab
-      </h2>
-    </div>
-    <div >
-      <h3>
-        University of Distant Galaxy
-      </h3>
-    </div>
+    
+
+      <div  *ngIf=" (generalData?.labInfo?.logo  && generalData?.labInfo?.logo != ''); else labNameContainer "   >
+        <div class="logo-container">
+            <img   [src]=" imgUrl +  generalData?.labInfo?.logo " id="lab-logo" />
+        </div>
+      </div>
+
+    <ng-template #labNameContainer>
+      <div>
+          <h2 >
+              {{ generalData?.labInfo?.name ? generalData.labInfo.name : 'No data'}}
+          </h2>
+      </div>
+        
+    </ng-template>
+
+
+    <!-- <div >
+
+        <div *ngIf=" (generalData?.labInfo?.universityLogo != ''); else labNameContainer " class="logo-container">
+            <img [src]=" imgUrl +  generalData?.labInfo?.universityLogo " id="university-logo" />
+        </div>
+    
+          <ng-template #labNameContainer>
+              <h3>
+                  {{ generalData?.labInfo?.universityName ? generalData.labInfo.universityName : 'No data' }}
+              </h3>
+          </ng-template>
+
+      
+    </div> -->
+
   </div>
   
 </div>

@@ -21,4 +21,42 @@
     margin: 0px;
     padding: 10px 0px 0px 10px;
   }
+
+  
+}
+
+
+div > div.logo-container {
+  padding-top: 10px;
+  text-align: center;
+}
+
+div.logo-container > #lab-logo, div.logo-container > #university-logo{
+  
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#lab-logo, #university-logo{
+  width: 60%;
+  height: 60%;
+}
+
+
+@mixin responsive-img($width, $height){
+  width: #{$width};
+  height: #{$height};
+}
+
+@media  screen and (max-width: 959px)  {
+
+  #lab-logo, #university-logo{
+    @include responsive-img( 40%, 40%);
+  }
+
+  .header-background-img{
+    height: 60%;
+  }
+
 }
